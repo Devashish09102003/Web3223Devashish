@@ -1,0 +1,57 @@
+    
+        <style>
+
+            table, th, td {
+                background-image: url('/images/background.jpg');  
+              border:1px solid black;
+            }
+            </style>
+        <h2>Some of our featured rentals are as follows:</h2>
+
+        <table style="width:100%">
+          <tr>
+            <td style="height:250px"><img src="/images/rentals198bellwood.jpg" alt="Home"width="500px" height="250px"/></td>
+            <td style="height:250px"><img src="/images/rentals301MarkhamStreet.jpg" alt="Home"width="500px" height="250px"/></td>
+            <td style="height:250px"><img src="/images/rentals15lowerjarvis.jpg" alt="Home"width="500px" height="250px"/></td>
+          </tr>
+          <tr>
+            <td style="width:30%">198 Bellowoods <br>Toronto ON M6J 2R1</td>
+            <td style="width:30%"> 301 Markham Street<br> Toronto ON M6J 3X2</td>
+            <td style="width:30%">15 Lower Jarvis Street - 4501<br> Toronto ON M5E 0C4</td>
+          </tr>
+          <tr>
+            <td><h3>4 Bed | 2 Bath</h3> <br>Welcome to this stunning <br>4 bedroom Vacation home located in <br>sought-after neighbourhood <br>of Trinity Bellowoods<br><h1>$6500</h1></td>
+            <td><h3>1 Bed | 1 Bath</h3><br> Experience the best of city <br>living in this modern, industrial-style condo located <br>between the trendy Little Italy and the vibrant Kensington Market neighborhoods.<br><h1>$3000</h1> </td>
+            <td><h3>4 Bed 2.5 Bath 1900 sqft</h3><br> Experience luxury living at its finest<br> in this stunning new penthouse with breathtaking<br> lake and city views on Toronto's waterfront.<br><h1>$14000</h1></td>
+          </tr>
+        </table>
+       {{#if featuredRental}}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+      <div class="card">
+        <img src="{{this.imageUrl}}" class="card-img-top">
+        <div class="card-body">
+          <h2 class="card-title text-center">{{this.heading}}</h2>
+          <p class="card-text">{{this.description}}</p>
+          <div class="row">
+            <div class="col">
+              <p class="card-text">{{this.numSleeps}} sleeps</p>
+            </div>
+            <div class="col">
+              <p class="card-text">{{this.numBedrooms}} bedrooms</p>
+            </div>
+            <div class="col">
+              <p class="card-text">{{this.city}}, {{this.province}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/if}}
+
+
+
+

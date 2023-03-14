@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+
+  .main{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    background-color:rgb(5, 157, 233) ;
+    border: solid 1px black;
+ 
+    
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  input{
+    padding: 10px;
+    width: 600px;
+  }
+
+  p{
+    color: red;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+  }
+    
+</style>
+
+
+
+<body>
+
+  <div class="main">
+    <h1>
+      Sign up Here
+    </h1>
+
+    <form method="post">
+
+      <table>
+
+        {{!-- first name --}}
+        <tr>
+          <td>
+<input type="text"  placeholder="firstname" name="firstname" value={{user.firstname}}>
+          </td>
+
+       
+        </tr>
+
+        <tr>
+             <td>
+ <p>{{error.firstname.msg}}</p> 
+          </td>
+        </tr>
+
+        <tr><td><br></td></tr>
+
+
+        {{!-- last name --}}
+
+            <tr>
+          <td>
+<input type="text"  placeholder="lastname" name="lastname" value={{user.lastname}}>
+          </td>
+
+       
+        </tr>
+
+        <tr>
+             <td>
+ <p>{{error.lastname.msg}}</p> 
+          </td>
+        </tr>
+
+        <tr><td><br></td></tr>
+
+        {{!-- email --}}
+
+           <tr>
+          <td>
+<input type="text"  placeholder="email" name="email" value={{user.email}}>
+          </td>
+
+       
+        </tr>
+
+        <tr>
+             <td>
+ <p>{{error.email.msg}}</p> 
+          </td>
+        </tr>
+
+        <tr><td><br></td></tr>
+
+        {{!-- password --}}
+
+        <tr>
+
+
+          <td>
+ <input type="password" placeholder="password" name="password"  autocomplete="off">
+          </td>
+
+          
+        </tr>
+
+        <tr>
+          <td>
+            <p>{{error.password.msg}}</p> 
+          </td>
+        </tr>
+      </table>
+      
+
+      
+<input type="submit" name="submit" value="submit">
+
+
+    </form>
+
+  </div>
+
+</body>
+
+
+
+  
+
+</html>

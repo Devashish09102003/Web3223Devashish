@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+
+  .main{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 50px;
+    background-color:rgb(5, 157, 233) ;
+ 
+    
+  }
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  input{
+    padding: 10px;
+    width: 600px;
+  }
+
+  p{
+    color: red;
+    background-color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+    
+</style>
+
+
+
+<body>
+
+  <div class="main">
+    <h1>
+      Login Here
+    </h1>
+
+    <form method="post">
+
+      <table>
+        <tr>
+          <td>
+<input type="text"  placeholder="Username" name="username" value={{user.username}}>
+          </td>
+
+       
+        </tr>
+
+        <tr>
+             <td>
+ <p>{{error.username.msg}}</p> 
+          </td>
+        </tr>
+
+        <tr><td><br></td></tr>
+
+        <tr>
+          <td>
+ <input type="password" placeholder="password" name="password"   autocomplete="off">
+          </td>
+
+          
+        </tr>
+
+        <tr>
+          <td>
+            <p>{{error.password.msg}}</p> 
+          </td>
+        </tr>
+      </table>
+      
+
+      
+<input type="submit" name="submit" value="submit">
+
+
+    </form>
+
+  </div>
+
+</body>
+
+
+
+  
+
+</html>
