@@ -9,5 +9,5 @@ Student Email : dkhanwani@myseneca.ca
 Course/Section: ZBB
 
 ## Project URLs
-GitHub Repo   : https://github.com/Devashish09102003/web322-dkhanwani.git
-Cyclic URL    : https://<app_name>.cyclic.app/
+GitHub Repo   : https://github.com/Devashish09102003/Web3223Devashish.git
+Cyclic URL    : https://baby-blue-loincloth.cyclic.app/
